@@ -6,6 +6,12 @@ class Coche:
     _modelo: str
     _año: int
 
+    def __init__ (self, marca: str, modelo: str, año: int):
+        self.setMarca(marca)
+        self.setModelo(modelo)
+        self.setAño(año)
+
+
     def getMarca(self):
         return self._marca
 
@@ -50,24 +56,15 @@ class Coche:
 
 
 # Primer objeto
-coche1 = Coche()
-coche1.setMarca("Suzuki")
-coche1.setModelo("Vitara")
-coche1.setAño(2015)
+coche1 = Coche("Suzuki", "Vitara", 2015)
 coche1.describir()
 
 # Segundo objeto
-coche2 = Coche()
-coche2.setMarca("Toyota")
-coche2.setModelo("Prado")
-coche2.setAño(2022)
+coche2 = Coche("Toyota", "Prado", 2022)
 coche2.describir()
 
 # Tercer objeto
-coche3 = Coche()
-coche3.setMarca("Ford")
-coche3.setModelo("Mustang")
-coche3.setAño(2011)
+coche3 = Coche("Ford", "Mustang", 2011)
 coche3.describir()
 
 
