@@ -45,4 +45,4 @@ class Bicicleta(Vehiculo):
             self._velocidad = self._velocidad_maxima
             print(f"¡Velocidad máxima de la bicicleta alcanzada! {self._velocidad_maxima} km/h")
         else:
-            print(f"Bicicleta pedaleando... velocidad actual: {self._velocidad} km/h")
+            print(f"Bicicleta pedaleando, velocidad actual: {self._velocidad} km/h")
